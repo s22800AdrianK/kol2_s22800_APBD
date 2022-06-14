@@ -10,9 +10,9 @@ namespace Kol2.Services
     public class MusicianService : IMusicianService
     {
         private readonly MusicDBContext _context;
-        public MusicianService(MusicDBContext medDBContext)
+        public MusicianService(MusicDBContext musDBContext)
         {
-            _context = medDBContext;
+            _context = musDBContext;
         }  
         
         public async Task Delete<T>(T entity) where T : class
