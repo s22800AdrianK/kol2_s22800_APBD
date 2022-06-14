@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Kol2.Migrations
 {
     [DbContext(typeof(MusicDBContext))]
-    [Migration("20220614125529_databseNewData")]
-    partial class databseNewData
+    [Migration("20220614131619_databseAgaiAgain")]
+    partial class databseAgaiAgain
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

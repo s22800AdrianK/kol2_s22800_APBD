@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Kol2.Migrations
 {
-    public partial class databseAgain : Migration
+    public partial class databseAgaiAgain : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -117,7 +117,8 @@ namespace Kol2.Migrations
                 {
                     { 1, "Filip", "Szczesniak", "Taco Hemigway" },
                     { 2, "Tymoteusz", "Rożynek", "Szczyl" },
-                    { 3, "Michał", "Matczak", "Mata" }
+                    { 3, "Michał", "Matczak", "Mata" },
+                    { 4, "Dawid", "Podsiadło", null }
                 });
 
             migrationBuilder.InsertData(
@@ -126,7 +127,8 @@ namespace Kol2.Migrations
                 values: new object[,]
                 {
                     { 3, 4.25f, null, "Schodki" },
-                    { 4, 3.24f, null, "Ortalion" }
+                    { 4, 3.24f, null, "Ortalion" },
+                    { 5, 3.24f, null, "Małomiasteczkowy" }
                 });
 
             migrationBuilder.InsertData(
@@ -144,7 +146,8 @@ namespace Kol2.Migrations
                 values: new object[,]
                 {
                     { 3, 3 },
-                    { 1, 4 }
+                    { 1, 4 },
+                    { 4, 5 }
                 });
 
             migrationBuilder.InsertData(
