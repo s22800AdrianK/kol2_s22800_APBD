@@ -25,7 +25,8 @@ namespace Kol2.Models
             {
                 new Musician{ IdMusician = 1,FirstName = "Filip", LastName = "Szczesniak", Nickname = "Taco Hemigway"},
                 new Musician{ IdMusician = 2,FirstName = "Tymoteusz", LastName = "Rożynek", Nickname = "Szczyl"},
-                new Musician{ IdMusician = 3,FirstName = "Michał", LastName = "Matczak", Nickname = "Mata"}
+                new Musician{ IdMusician = 3,FirstName = "Michał", LastName = "Matczak", Nickname = "Mata"},
+                new Musician{ IdMusician = 4,FirstName = "Dawid", LastName = "Podsiadło", Nickname = null}
             };
 
             var musicLabels = new List<MusicLabel>
@@ -46,6 +47,7 @@ namespace Kol2.Models
                 new Track{ TrackName = "Hiphopkryta", Duration=4.25f, IdTrack=2,  IdMusicAlbum=2},
                 new Track{ TrackName = "Schodki", Duration=4.25f, IdTrack=3,  IdMusicAlbum=null},
                 new Track{ TrackName = "Ortalion", Duration=3.24f, IdTrack=4, IdMusicAlbum=null},
+                new Track{ TrackName = "Małomiasteczkowy", Duration=3.24f, IdTrack=5, IdMusicAlbum=null},
             };
 
             var music_track = new List<Musician_Track>
@@ -53,7 +55,8 @@ namespace Kol2.Models
                 new Musician_Track{IdMusician=1,IdTrack=1},
                 new Musician_Track{IdMusician=2,IdTrack=2},
                 new Musician_Track{IdMusician=3,IdTrack=3},
-                new Musician_Track{IdMusician=1,IdTrack=4}
+                new Musician_Track{IdMusician=1,IdTrack=4},
+                new Musician_Track{IdMusician=4,IdTrack=5}
             };
 
             modelBuilder.Entity<Musician>(e =>
