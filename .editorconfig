@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CA1051: Nie deklaruj widocznych pól wystąpień
+dotnet_diagnostic.CA1051.severity = none
