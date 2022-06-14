@@ -37,12 +37,12 @@ namespace Kol2.Controllers
             {
                 try
                 {
+                    var tracks = await _service.GetTracks(id);
                     var musician_tracks = await _service.GetMusician_Tracks(id);
                     foreach (var mt in musician_tracks)
                     {
                         await _service.Delete(mt);
-                    }
-                    var tracks = await _service.GetTracks(id);                   
+                    }                   
                     //return Ok(tracks);
                     foreach (var t in tracks)
                     {
